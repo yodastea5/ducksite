@@ -1,9 +1,16 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700");
 * {
     margin:0px;
     padding:0px;
     box-sizing:border-box;
     font-family:sans-serif;
-  }
+      font-family: 'Open Sans', sans-serif;
+      box-sizing: border-box;
+      color: #333;
+      font-size: 100%;
+      line-height: 1.5;
+   }
+  
   
   .Square {
     background-color: #c77700;
@@ -42,14 +49,8 @@
 
 
 /* ok right under is osme */
-@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700");
- * {
-	 font-family: 'Open Sans', sans-serif;
-	 box-sizing: border-box;
-	 color: #333;
-	 font-size: 100%;
-	 line-height: 1.5;
-}
+
+
 
  nav {
 	 --duration: .5s;
