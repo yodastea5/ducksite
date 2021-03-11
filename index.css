@@ -1,0 +1,127 @@
+* {
+    margin:0px;
+    padding:0px;
+    box-sizing:border-box;
+    font-family:sans-serif;
+  }
+  
+  .Square {
+    background-color: #c77700;
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    clip-path: circle(50% at right 50%);
+    z-index: 1;
+  }
+
+
+  body {
+    background-color: #171717ce;
+    background-image: linear-gradient(orange, yellow);
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
+  
+
+
+
+
+  #top {
+    height: 100vh;
+    background-color: #1717171f;
+    width: 100%;
+    position: relative;
+    z-index: 100;
+  }
+
+
+
+
+  #sidebar {
+    position:absolute;
+    top:0px;
+    left:-200px;
+    width:200px;
+    height:100%;
+    background:#db8e00;
+    transition:all 300ms linear;
+  }
+  #sidebar.active {
+    left:0px;
+  }
+  #sidebar .toggle-btn {
+    position:absolute;
+    left:220px;
+    top:10px;
+  }
+  #sidebar .toggle-btn span {
+    display:block;
+    width:30px;
+    height:5px;
+    background:#c77700;
+    margin:5px 0px;
+    cursor:pointer;
+  }
+  #sidebar div.list div.item {
+    padding:15px 10px;
+    background-image: linear-gradient(#db8e00, #c77700);
+    color:#fcfcfc;
+    text-transform:uppercase;
+    font-size:15px;
+  }
+
+  #sidebar div.list div.item a {
+    padding:15px 10px;
+    color:#000000;
+    text-transform:uppercase;
+    font-size:15px;
+    text-decoration: none;
+  }
+
+
+
+
+  #middle {
+    background-image: url(images/duckbg1.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    z-index: 100;
+  }
+
+
+
+/*adding rain img and making opacity 0*/ 
+#middle:before { 
+    content: ""; 
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+    width: 100%; 
+    height: 100%; 
+    background-image: url(https://i.gifer.com/origin/74/74043b11818c7a40ae726b01c8eb4a43_w200.webp); 
+    animation: rain 0.4s linear infinite; 
+    opacity: 0; 
+} 
+/* just changing the position of image  
+of rain using keyframes*/ 
+@keyframes rain { 
+    0% { 
+        background-position: 0 0; 
+        opacity: 1; 
+    } 
+
+    100% { 
+        background-position: 8% 80%; 
+        opacity: 1; 
+    } 
+} 
+
+
