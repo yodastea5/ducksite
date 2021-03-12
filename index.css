@@ -43,7 +43,6 @@
     background-color: #1717171f;
     width: 100%;
     position: relative;
-    z-index: 100;
     -webkit-transition: transform .7s ease-in-out;
     -moz-transition: transform .7s ease-in-out;
     -ms-transition: transform .7s ease-in-out;
