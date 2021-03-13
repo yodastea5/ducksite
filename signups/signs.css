@@ -24,6 +24,17 @@ body {
 	font:600 16px/18px 'Open Sans',sans-serif;
 }
 
+@keyframes circleeatspage {
+	0% { 
+		clip-path: circle(200vw at right -20%);
+    } 
+
+    100% { 
+		clip-path: circle(200vw at right -20%);
+    } 
+}
+
+
 
 .Square {
     background-color: #c77700;
@@ -36,11 +47,14 @@ body {
     z-index: 2;
   }
   
-  .active {
-    clip-path: circle(200vw at right -20%);
+  .hid {
+	z-index: 3;
   }
   
-
+  .active {
+	clip-path: circle(200vw at right -20%);
+  }
+  
 
 
 .login-html{
@@ -109,7 +123,6 @@ body {
 	background:rgba(255,255,255,.1);
 }
 .login-form .group input[data-type="password"]{
-	text-security:circle;
 	-webkit-text-security:circle;
 }
 .login-form .group .label{
