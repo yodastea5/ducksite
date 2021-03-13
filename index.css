@@ -32,9 +32,13 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
+    z-index: 100;
   }
   
+  html {
+    scroll-behavior: smooth;
 
+  }
 
 
 
@@ -50,6 +54,14 @@
     transition: transform .7s ease-in-out;
   }
 
+
+
+ .duckpeeking {
+     position: absolute;
+     left: 25%;
+     top: 100%;
+     z-index: 99;
+ }
 
 
 /* ok right under is osme */
@@ -165,7 +177,6 @@ input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
   /* *mad* */
 
 
-
   #middle {
     background-image: url(images/duckbg1.jpg);
     background-position: center;
@@ -205,3 +216,32 @@ of rain using keyframes*/
 } 
 
 
+
+.Scroll-Section {
+    text-align: center;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    bottom: 0;
+    cursor: pointer;
+    z-index: 2;
+    scroll-behavior: smooth;
+
+  }
+  
+  .Scroll-Section p {
+    position: absolute;
+    left: 50%;
+    top: 10%;
+    transform: translate(-50%);
+    width: 100%;
+    font-size: 22px;
+    scroll-behavior: smooth;
+    color: white;
+  }
+  
+  #Scroll-Down {
+    width: 150px;
+    scroll-behavior: smooth;
+
+  }

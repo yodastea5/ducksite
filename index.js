@@ -4,3 +4,4 @@ $(".hover").mouseleave(
   }
 );
 
+var SecondSection = document.getElementById('middle');
